@@ -1,0 +1,11 @@
+#ifndef PHILOSEPHER_H
+#define PHILOSEPHER_H
+
+class philosepher
+{
+
+};
+
+
+
+#endif // PHILOSEPHER_H
