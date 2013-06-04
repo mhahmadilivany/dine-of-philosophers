@@ -10,17 +10,11 @@ Each philosopher must alternately think and eat. However, a philosopher can only
 Eating is not limited by the amount of spaghetti left: assume an infinite supply.
 The problem is how to design a discipline of behavior such that each philosopher won't starve; i.e., can forever continue to alternate between eating and thinking assuming that any philosopher cannot know when others may want to eat or think.
 instruct each philosopher to behave as follows:
-
 think until the left fork is available; when it is, pick it up;
-
 think until the right fork is available; when it is, pick it up;
-
 when both forks are held, eat for a fixed amount of time;
-
 then, put the right fork down;
-
 then, put the left fork down;
-
 repeat from the beginning.
 
 
