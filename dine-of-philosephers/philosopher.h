@@ -21,9 +21,6 @@ public:
     void stop_eating();
     void resume(QVector<philosopher>,philosopher,philosopher,int,int,int);
     QString what_doing();
-
-//signals:
-  //  void onStartClickedSignal();
 };
 
 
