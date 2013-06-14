@@ -1,5 +1,4 @@
 #include "philosopher.h"
-#include "widget.h"
 #include <QMutex>
 
 philosopher :: philosopher()
@@ -78,5 +77,5 @@ void philosopher :: resume(QVector<philosopher>p,philosopher p1,philosopher p2,i
     w.label5->setText(p[4].what_doing());
     resume(p,ph[0],ph[1],index[0],index[1],i-1);
 }
-
+//void philosopher :: onStartClickedSignal()
 

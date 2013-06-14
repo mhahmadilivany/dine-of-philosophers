@@ -3,8 +3,9 @@
 
 #include <QString>
 #include <QVector>
+#include "widget.h"
 
-class philosopher
+class philosopher : public Widget
 {
 private:
     bool right_hand;
@@ -21,6 +22,9 @@ public:
     void stop_eating();
     void resume(QVector<philosopher>,philosopher,philosopher,int,int,int);
     QString what_doing();
+
+//signals:
+  //  void onStartClickedSignal();
 };
 
 

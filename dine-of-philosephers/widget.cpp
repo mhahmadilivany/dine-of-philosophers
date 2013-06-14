@@ -1,5 +1,4 @@
 #include "widget.h"
-#include "philosopher.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -44,23 +43,24 @@ Widget::Widget(QWidget *parent)
     grid->addWidget(push2);
     grid->addWidget(push3);  
     connect(push1,SIGNAL(clicked()),this,SLOT(onStartClicked()));
+    connect(push3,SIGNAL(clicked()),this,SLOT(close()));
 }
 
 void Widget :: onStartClicked()
 {
-    QVector<philosopher>p;
+    QVector<philosopher>p(5);
     philosopher p1;
-    p[0] = p1;
     philosopher p2;
-    p[1] =  p2;
     philosopher p3;
-    p[2] = p3;
     philosopher p4;
-    p[3] = p4;
     philosopher p5;
+    p[0] = p1;    
+    p[1] = p2;
+    p[2] = p3;    
+    p[3] = p4;    
     p[4] = p5;
     philosopher q;
-    philosopher.resume(p,p1,p3,0,2,5);
+    q.resume(p,p1,p3,0,2,5);
 }
 
 Widget::~Widget()
